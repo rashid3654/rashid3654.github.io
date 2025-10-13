@@ -1,72 +1,75 @@
-/* ----------- Global ----------- */
-body {
-  font-family: 'Poppins', sans-serif;
+/* General Reset */
+* {
   margin: 0;
-  background: linear-gradient(135deg, #f0f4f8 0%, #e6eef5 100%);
-  color: #1b1b1b;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3 {
-  color: #0a3d62;
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f9fafc, #e6ecf5);
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #004aad;
 }
 
 a {
-  color: #0078d7;
+  color: #004aad;
   text-decoration: none;
 }
 
-section {
-  padding: 70px 20px;
-  text-align: center;
-}
-
-/* ----------- Hero ----------- */
+/* Hero Section */
 .hero {
-  background: linear-gradient(120deg, #0078d7, #00b4d8);
-  color: white;
   text-align: center;
-  padding: 120px 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #004aad, #0078d7);
+  color: white;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 25px;
+  font-size: 1.1rem;
+  margin: 10px 0 20px;
 }
 
 .btn {
   background: white;
-  color: #0078d7;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+  color: #004aad;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #e9f5ff;
+  background: #e6ecf5;
+  transform: scale(1.05);
 }
 
-/* ----------- About ----------- */
+/* About */
 .about {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.8;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  padding: 40px 30px;
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  color: #333;
 }
 
-/* ----------- Skills ----------- */
+/* Skills */
 .skills {
-  background: #f8fbff;
+  padding: 60px 20px;
+  background: #f0f4ff;
+}
+
+.skills h2 {
+  margin-bottom: 30px;
 }
 
 .skill-boxes {
@@ -74,89 +77,95 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
-  margin-top: 25px;
 }
 
 .skill-boxes div {
-  background: white;
-  border: 2px solid #0078d7;
-  color: #0078d7;
-  padding: 12px 20px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #0078d7, #00b4d8);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill-boxes div:hover {
-  background: #0078d7;
-  color: white;
-  transform: scale(1.05);
+  transform: scale(1.08);
+  box-shadow: 0 5px 20px rgba(0, 120, 215, 0.4);
 }
 
-/* ----------- Certifications ----------- */
+/* Certifications */
 .certifications {
-  background: #f1f5f9;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .cert-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .cert-card {
-  background: white;
+  background: #fff;
+  border: 2px solid #0078d7;
   padding: 15px 25px;
-  border-radius: 12px;
-  border-left: 5px solid #00a8ff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border-radius: 15px;
+  color: #004aad;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
-/* ----------- Projects ----------- */
+.cert-card:hover {
+  background: #0078d7;
+  color: white;
+}
+
+/* Projects */
 .projects {
-  background: white;
+  padding: 60px 20px;
+  background: #ffffff;
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
-  margin-top: 30px;
 }
 
 .project-card {
-  background: #f9fcff;
+  background: #f8f9ff;
+  border-left: 5px solid #0078d7;
+  border-radius: 12px;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
-  background: #e8f4ff;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0, 120, 215, 0.2);
 }
 
-/* ----------- Contact ----------- */
+/* Contact */
 .contact {
-  background: linear-gradient(120deg, #0078d7, #0099e6);
-  color: white;
+  text-align: center;
   padding: 60px 20px;
+  background: #f0f4ff;
 }
 
 .contact a {
-  color: #ffea94;
+  color: #0078d7;
   font-weight: 500;
 }
 
-/* ----------- Footer ----------- */
 footer {
-  background: #0a3d62;
+  background: #004aad;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 0.9rem;
 }
