@@ -14,23 +14,46 @@ body {
 
 header {
   text-align: center;
-  padding: 50px 20px 30px;
+  padding: 60px 20px 40px;
 }
 
-h1 {
-  font-size: 2.8em;
+.name {
+  font-size: 3em;
+  font-weight: 800;
   margin-bottom: 0.1em;
   color: #1e40af;
+  letter-spacing: 1px;
 }
 
 .role {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #475569;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
-.contact p {
-  margin: 4px 0;
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 14px 35px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5);
+  transition: all 0.3s ease;
+  font-size: 1.1em;
+}
+
+.resume-btn:hover {
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  transform: scale(1.07);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+.contact {
+  margin-top: 30px;
+  line-height: 1.6;
 }
 
 .contact a {
@@ -41,24 +64,6 @@ h1 {
 
 .contact a:hover {
   text-decoration: underline;
-}
-
-.resume-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #2563eb;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-  transition: 0.3s;
-}
-
-.resume-btn:hover {
-  background-color: #1d4ed8;
-  transform: scale(1.05);
 }
 
 .intro {
