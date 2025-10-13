@@ -1,188 +1,88 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f5f9ff, #e9eef5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
   color: #222;
   line-height: 1.6;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
+header {
   text-align: center;
-  padding: 120px 20px;
-  color: white;
-  overflow: hidden;
-  background: linear-gradient(135deg, rgba(0, 74, 173, 0.95), rgba(0, 120, 215, 0.95));
+  padding: 40px 20px;
+  background: linear-gradient(120deg, #e0e7ff, #f9fafb);
+  color: #1e293b;
 }
 
-.hero::before {
-  content: "";
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'),
-                    url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg');
-  background-repeat: no-repeat;
-  background-position: 20% center, 80% center;
-  background-size: 160px, 140px;
-  opacity: 0.08;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  color: #fff;
-  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin: 15px 0 25px;
-  color: #e8ecf7;
+  font-size: 1.2em;
+  color: #475569;
 }
 
-.btn {
-  background: white;
-  color: #004aad;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #e6ecf5;
-  transform: scale(1.05);
-}
-
-/* About */
-.about {
-  padding: 60px 20px;
+.intro {
   text-align: center;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* Skills Section */
-.skills {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #eef4ff, #dcecff);
-}
-
-.skills h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #004aad;
-}
-
-.skill-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.skill-boxes div {
-  background: linear-gradient(135deg, #0078d7, #00b4d8);
-  color: white;
-  padding: 15px 25px;
-  border-radius: 20px;
-  font-weight: 500;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.skill-boxes div:hover {
-  transform: scale(1.08);
-  box-shadow: 0 5px 20px rgba(0, 120, 215, 0.4);
-}
-
-/* Certifications */
-.certifications {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.cert-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.cert-card {
-  background: #fff;
-  border: 2px solid #0078d7;
-  padding: 15px 25px;
-  border-radius: 15px;
-  color: #004aad;
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.cert-card:hover {
-  background: #0078d7;
-  color: white;
-}
-
-/* Projects */
-.projects {
-  padding: 60px 20px;
-  background: #ffffff;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-}
-
-.project-card {
-  background: #f8f9ff;
-  border-left: 5px solid #0078d7;
-  border-radius: 12px;
+  max-width: 800px;
+  margin: 30px auto;
   padding: 20px;
-  width: 280px;
-  transition: all 0.3s ease;
 }
 
-.project-card:hover {
+.download-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.download-btn:hover {
+  background: #1d4ed8;
   transform: scale(1.05);
-  box-shadow: 0 5px 20px rgba(0, 120, 215, 0.2);
 }
 
-/* Contact */
-.contact {
-  text-align: center;
-  padding: 60px 20px;
-  background: #f0f4ff;
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.contact a {
-  color: #0078d7;
-  font-weight: 500;
+h2 {
+  color: #1e40af;
+  border-bottom: 2px solid #93c5fd;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background: #004aad;
-  color: white;
   text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  padding: 15px;
+  background: #e2e8f0;
+  color: #334155;
+  margin-top: 40px;
+  font-size: 0.9em;
 }
