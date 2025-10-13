@@ -1,34 +1,39 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8fafc;
+  background-color: #fdfdfd;
   color: #1e293b;
   margin: 0;
   padding: 0;
+  background-image: url('https://raw.githubusercontent.com/rashid3654/resources/main/devops-bg.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
 }
 
 .container {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
 
 header {
   text-align: center;
-  padding: 60px 20px 40px;
+  padding: 60px 20px 30px;
 }
 
 .name {
   font-size: 3em;
   font-weight: 800;
-  margin-bottom: 0.1em;
   color: #1e40af;
   letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .role {
   font-size: 1.2em;
   color: #475569;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .resume-btn {
@@ -69,17 +74,17 @@ header {
 .intro {
   text-align: center;
   margin: 30px auto;
-  max-width: 750px;
+  max-width: 800px;
   font-size: 1.08em;
   line-height: 1.8;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
   padding: 25px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 section {
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   margin-top: 30px;
   padding: 25px;
   border-radius: 12px;
@@ -126,6 +131,6 @@ footer {
   padding: 10px;
   font-size: 0.9em;
   color: #475569;
-  background: #f1f5f9;
+  background: rgba(241, 245, 249, 0.8);
   border-radius: 10px;
 }
