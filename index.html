@@ -15,13 +15,13 @@
 
     header {
       text-align: center;
-      padding: 60px 20px 20px 20px;
+      padding: 60px 20px 40px 20px;
       background: linear-gradient(135deg, #0078d7, #1e293b);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin: 0;
     }
 
@@ -29,7 +29,7 @@
       font-weight: 400;
       color: #cbd5e1;
       margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
 
     section {
@@ -46,19 +46,21 @@
       margin-bottom: 40px;
     }
 
-    .skills {
+    .skills, .certs {
       background-color: #1e293b;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+      margin-top: 30px;
     }
 
-    .skills h3 {
+    .skills h3, .certs h3 {
       color: #38bdf8;
       margin-bottom: 15px;
+      font-size: 1.3em;
     }
 
-    .skills span {
+    .skills span, .certs span {
       display: inline-block;
       background: #334155;
       color: #f8fafc;
@@ -70,10 +72,26 @@
 
     iframe {
       width: 100%;
-      height: 800px;
+      height: 850px;
       border: none;
       border-radius: 12px;
       margin-top: 40px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #38bdf8;
+      color: #0f172a;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    a.button:hover {
+      background-color: #0ea5e9;
     }
 
     footer {
@@ -85,19 +103,11 @@
       margin-top: 60px;
     }
 
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #38bdf8;
-      color: #0f172a;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-    }
-
-    a.button:hover {
-      background-color: #0ea5e9;
+    .section-title {
+      color: #38bdf8;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -109,9 +119,14 @@
 
   <section>
     <p class="intro">
-      Passionate DevOps & Cloud Engineer with hands-on experience in automating deployments, managing CI/CD pipelines, 
-      and optimizing cloud infrastructure across Azure and AWS. Skilled in monitoring with Prometheus & Grafana, 
-      containerization using Docker, and orchestrating scalable solutions with Kubernetes.
+      I am a skilled IT professional with hands-on experience in <b>DevOps, Cloud Engineering, and IT Support</b>. 
+      I specialize in automating CI/CD pipelines, deploying scalable cloud infrastructure, 
+      and providing reliable Level 1 & 2 technical support.  
+      I have a strong background in <b>Azure and AWS Cloud Platforms</b>, along with a foundation in 
+      <b>network administration, Linux systems, and infrastructure monitoring using Prometheus and Grafana</b>.
+      <br><br>
+      My career began in IT Support, managing tickets, troubleshooting systems, and ensuring smooth operations across Windows, M365, and network devices. 
+      Over time, I transitioned into DevOps, leveraging automation, cloud, and containerization to build efficient, secure, and scalable environments.
     </p>
 
     <div class="skills">
@@ -119,22 +134,38 @@
       <span>Azure</span>
       <span>AWS</span>
       <span>Docker</span>
-      <span>Jenkins</span>
       <span>Kubernetes</span>
+      <span>Jenkins</span>
       <span>Prometheus</span>
       <span>Grafana</span>
       <span>Linux</span>
+      <span>Windows Server</span>
+      <span>Active Directory</span>
+      <span>M365 Support</span>
+      <span>Networking</span>
+      <span>PowerShell</span>
+      <span>Bash Scripting</span>
       <span>CI/CD Pipelines</span>
-      <span>Infrastructure Automation</span>
+      <span>Git & GitHub</span>
+    </div>
+
+    <div class="certs">
+      <h3>🎓 Certifications</h3>
+      <span>CCNA</span>
+      <span>ITIL Certified</span>
+      <span>Microsoft Azure Fundamentals (AZ-900)</span>
+      <span>AWS Cloud Practitioner</span>
+      <span>Linux Essentials</span>
     </div>
 
     <a class="button" href="Rashid_DevOps_Resume.pdf" target="_blank">📄 View / Download My Resume</a>
 
+    <h3 class="section-title">📘 Resume Preview</h3>
     <iframe src="Rashid_DevOps_Resume.pdf"></iframe>
   </section>
 
   <footer>
-    © 2025 Rashid Hussain — DevOps & Cloud Engineer
+    © 2025 Rashid Hussain — DevOps & Cloud Engineer | Azure & AWS Specialist
   </footer>
 </body>
 </html>
