@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,44 +7,60 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f9fafc, #e6ecf5);
+  background: linear-gradient(135deg, #f5f9ff, #e9eef5);
   color: #222;
   line-height: 1.6;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #004aad;
-}
-
-a {
-  color: #004aad;
-  text-decoration: none;
-}
-
 /* Hero Section */
 .hero {
+  position: relative;
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #004aad, #0078d7);
+  padding: 120px 20px;
   color: white;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0, 74, 173, 0.95), rgba(0, 120, 215, 0.95));
+}
+
+.hero::before {
+  content: "";
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg'),
+                    url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg');
+  background-repeat: no-repeat;
+  background-position: 20% center, 80% center;
+  background-size: 160px, 140px;
+  opacity: 0.08;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .subtitle {
-  font-size: 1.1rem;
-  margin: 10px 0 20px;
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  color: #e8ecf7;
 }
 
 .btn {
   background: white;
   color: #004aad;
-  padding: 10px 25px;
-  border-radius: 25px;
-  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -59,17 +75,18 @@ a {
   text-align: center;
   max-width: 900px;
   margin: auto;
-  color: #333;
 }
 
-/* Skills */
+/* Skills Section */
 .skills {
   padding: 60px 20px;
-  background: #f0f4ff;
+  background: linear-gradient(135deg, #eef4ff, #dcecff);
 }
 
 .skills h2 {
+  text-align: center;
   margin-bottom: 30px;
+  color: #004aad;
 }
 
 .skill-boxes {
@@ -84,9 +101,9 @@ a {
   color: white;
   padding: 15px 25px;
   border-radius: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   font-weight: 500;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
 }
 
 .skill-boxes div:hover {
@@ -115,7 +132,7 @@ a {
   border-radius: 15px;
   color: #004aad;
   font-weight: 500;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .cert-card:hover {
@@ -142,7 +159,7 @@ a {
   border-radius: 12px;
   padding: 20px;
   width: 280px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease;
 }
 
 .project-card:hover {
