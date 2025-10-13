@@ -1,111 +1,171 @@
-/* General layout */
+/* Global Styling */
 body {
-  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
   color: #1e293b;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef3ff 40%, #f9f9ff 100%);
+  background-attachment: fixed;
   text-align: center;
   line-height: 1.6;
-  background: linear-gradient(135deg, #f8fbff 0%, #e8f0ff 40%, #f9f9ff 100%);
-  background-attachment: fixed;
 }
 
 /* Container */
-.content {
-  max-width: 800px;
-  margin: 80px auto;
-  padding: 40px 25px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(5px);
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 30px;
 }
 
-/* Headings */
-h1 {
-  font-size: 2.5em;
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.name {
+  font-size: 3em;
   color: #1e40af;
-  margin-bottom: 0.2em;
+  font-weight: 800;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
 }
 
-.title {
-  font-size: 1.1em;
+.role {
+  font-size: 1.2em;
   color: #475569;
   margin-bottom: 25px;
 }
 
-/* CV Button */
-.cv-btn {
+/* Resume Button */
+.resume-btn {
   display: inline-block;
   background: linear-gradient(90deg, #1e3a8a, #2563eb);
   color: #fff;
-  padding: 12px 35px;
+  padding: 14px 36px;
   border-radius: 10px;
   text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
-  transition: 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.5);
+  transition: all 0.3s ease;
 }
 
-.cv-btn:hover {
-  transform: scale(1.08);
+.resume-btn:hover {
+  transform: scale(1.07);
   background: linear-gradient(90deg, #2563eb, #1d4ed8);
-  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
 }
 
-/* Intro paragraph */
+/* Contact Info */
+.contact {
+  margin-top: 25px;
+}
+
+.contact a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Intro */
 .intro {
-  font-size: 1em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 25px;
   margin: 30px auto;
-  max-width: 700px;
-  color: #334155;
+  max-width: 850px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  font-size: 1.05em;
 }
 
-/* Skills section */
+/* Headings */
+h2 {
+  color: #1e40af;
+  border-bottom: 2px solid #93c5fd;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+/* Skills */
 .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 25px 0;
+  margin-top: 15px;
 }
 
 .skills span {
   background: #e0e7ff;
   color: #1e3a8a;
   padding: 8px 14px;
-  border-radius: 20px;
-  font-size: 0.9em;
-  font-weight: 500;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Projects and certifications */
-.projects, .certs {
-  margin-top: 25px;
-}
-
-.projects h2, .certs h2 {
-  color: #1e40af;
-  margin-bottom: 10px;
-}
-
-.projects p, .certs p {
+  border-radius: 8px;
   font-size: 0.95em;
-  color: #374151;
+  font-weight: 500;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Projects */
+.projects {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+  color: #1e40af;
+  margin-bottom: 8px;
+}
+
+.project p {
+  color: #334155;
+  font-size: 0.96em;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Certifications */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  color: #334155;
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+ul li {
+  margin-bottom: 5px;
 }
 
 /* Footer */
 footer {
   margin-top: 40px;
-  font-size: 0.9em;
+  padding: 15px;
+  background: rgba(241, 245, 249, 0.8);
   color: #475569;
-}
-
-footer a {
-  color: #2563eb;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
+  border-radius: 10px;
+  font-size: 0.9em;
 }
